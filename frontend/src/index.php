@@ -17,7 +17,7 @@
         <div class="grid grid-cols-2 gap-3">
             <div class="aspect-square p-3 rounded-md bg-gray flex flex-col gap-6 justify-center items-center">
                 <div class="inline-flex rounded-full bg-lightgray items-center justify-center p-4 w-fit h-fit">
-                    <img src="../../asset/images/Radiator.svg" alt="Chauffage" class="w-[50px] h-[50px]">
+                    <img src="../../asset/images/Radiator.svg" alt="Chauffage" class="w-[12dvw] h-[6dvh]">
                 </div>
                 <div>
                     <h2 class="font-montserrat text-lg font-bold text-center">Chauffage</h2>
@@ -27,7 +27,7 @@
 
             <div class="aspect-square p-3 rounded-md bg-gray flex flex-col gap-6 justify-center items-center">
                 <div class="inline-flex rounded-full bg-lightgray items-center justify-center p-4 w-fit h-fit">
-                    <img src="../../asset/images/Ampoule.svg" alt="Lumière" class="w-[50px] h-[50px]">
+                    <img src="../../asset/images/Ampoule.svg" alt="Lumière" class="w-[12dvw] h-[6dvh]">
                 </div>
                 <div>
                     <h2 class="font-montserrat text-lg font-bold text-center">Lumière</h2>
@@ -37,7 +37,7 @@
 
             <div class="aspect-square p-3 rounded-md bg-gray flex flex-col gap-6 justify-center items-center">
                 <div class="inline-flex rounded-full bg-lightgray items-center justify-center p-4 w-fit h-fit">
-                    <img src="../../asset/images/Volets.svg" alt="Volets" class="w-[50px] h-[50px]">
+                    <img src="../../asset/images/Volets.svg" alt="Volets" class="w-[12dvw] h-[6dvh]">
                 </div>
                 <div>
                     <h2 class="font-montserrat text-lg font-bold text-center">Volets</h2>
@@ -47,7 +47,7 @@
 
             <div class="aspect-square p-3 rounded-md bg-gray flex flex-col gap-6 justify-center items-center">
                 <div class="inline-flex rounded-full bg-lightgray items-center justify-center p-4 w-fit h-fit">
-                    <img src="../../asset/images/Store.svg" alt="Store" class="w-[50px] h-[50px]">
+                    <img src="../../asset/images/Store.svg" alt="Store" class="w-[12dvw] h-[6dvh]">
                 </div>
                 <div>
                     <h2 class="font-montserrat text-lg font-bold text-center">Store</h2>
