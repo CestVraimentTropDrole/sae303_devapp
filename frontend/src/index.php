@@ -1,5 +1,5 @@
 <?php
-
+    include "../../backend/database.php";
 ?>
 
 <html class="w-full h-full">
