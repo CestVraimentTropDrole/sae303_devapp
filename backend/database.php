@@ -1,8 +1,8 @@
 <?php
-define('HOST', "192.168.135.113");
+define('HOST', "127.0.0.1");
 define('DB_NAME', "perout");
-define('USER', "user");
-define('PASS', "rQUSxP2xUCxnzU45");
+define('USER', "root");
+define('PASS', "");
 
 try{
     $db = new PDO("mysql:host=" .HOST . ";dbname=" . DB_NAME, USER, PASS);

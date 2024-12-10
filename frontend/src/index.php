@@ -18,16 +18,36 @@
         </header>
 
         <div class="grid grid-cols-2 gap-3">
-
             <?php
                 $donnees = requete_actionneurs($db); //On récupère les données des actionneurs
 
                 foreach ($donnees as $ligne) { //On rentre dans une boucle pour afficher chaque actionneur
-                    affiche_actionneurs($ligne['nom'], $ligne['etat']);
+                    affiche_actionneurs($ligne['id'], $ligne['nom'], $ligne['etat']);
                 }
             ?>
         </div>
 
     </body>
+
+    <script>
+        //Fonction qui récupère 
+        function toggleState(element) {
+            const deviceId = element.getAttribute('data-id');
+            fetch('../../backend/traitement.php', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ id: deviceId })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    // Change state visually based on the new state
+                    element.querySelector('p').innerText = data.newState ? 'actif' : 'inactif';
+                } else {
+                    alert('Erreur lors de la mise à jour de l\'état.');
+                }
+            });
+        }
+    </script>
     
 </html>
