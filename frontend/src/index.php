@@ -17,6 +17,36 @@
             <h1 class="text-center font-bold text-xl pb-3 text-white">Domotique</h1>
         </header>
 
+        <div class="grid grid-cols-3 gap-3">
+            <?php
+            $donnees = requete_capteurs($db);
+            ?>
+
+            <!--Affichage de l'heure-->
+            <div class='p-3 rounded-md bg-gray flex flex-col gap-4 justify-center items-center'>
+                <div>
+                    <h2 class='font-montserrat text-lg font-bold text-center capitalize'>MàJ</h2>
+                    <p class='font-montserrat text-base text-center capitalize'><?php echo($donnees['time']); ?></p>
+                </div>
+            </div>
+
+            <!--Affichage de la température-->
+            <div class='p-3 rounded-md bg-gray flex flex-col gap-4 justify-center items-center'>
+                <div>
+                    <h2 class='font-montserrat text-lg font-bold text-center capitalize'>T°</h2>
+                    <p class='font-montserrat text-base text-center capitalize'><?php echo($donnees['temperature']); ?>°C</p>
+                </div>
+            </div>
+
+            <!--Affichage de l'humidité-->
+            <div class='p-3 rounded-md bg-gray flex flex-col gap-4 justify-center items-center'>
+                <div>
+                    <h2 class='font-montserrat text-lg font-bold text-center capitalize'>Humidité</h2>
+                    <p class='font-montserrat text-base text-center capitalize'><?php echo($donnees['humidite']); ?>%</p>
+                </div>
+            </div>
+        </div>
+
         <div class="grid grid-cols-2 gap-3">
             <?php
                 $donnees = requete_actionneurs($db); //On récupère les données des actionneurs
@@ -30,7 +60,7 @@
     </body>
 
     <script>
-        //Fonction qui récupère 
+        //Fonction qui active le changement de statut au clic
         function toggleState(element) {
             const deviceId = element.getAttribute('data-id');
             fetch('../../backend/traitement.php', {
