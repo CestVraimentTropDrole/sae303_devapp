@@ -1,6 +1,6 @@
 <?php
 define('HOST', "192.168.135.113");
-define('DB_NAME', "perout");
+define('DB_NAME', "sae303");
 define('USER', "user");
 define('PASS', "rQUSxP2xUCxnzU45");
 

@@ -54,7 +54,7 @@ function requete_capteurs ($db) {
 
     if (count($donnees) > 0) {
         // Heure du premier enregistrement
-        $time = end($donnees)['time'];
+        $time = $donnees[0]['time'];
     
         foreach ($donnees as $ligne) {
             if ($ligne['type'] === 'temperature' && $temperature === null) {
